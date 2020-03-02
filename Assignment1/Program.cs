@@ -9,7 +9,24 @@ namespace Assignment1
     class Program
     {
         static void Main(string[] args)
-        { }
+        { 
+        int n = 5;
+            PrintPattern(n);
+
+            int n2 = 6;
+            Printseries(n2);
+
+            string s = "09:15:35PM";
+            string t = UsfTime(s);
+            Console.WriteLine(t);
+
+            int n3 = 110;
+            int k = 11;
+            UsfNumbers(n3, k);
+
+            string[] words = new string[] { "abcd", "dcba", "lls", "s", "sssll" };
+            PalindromePairs(words);
+        }
         // Question 1
         private static void PrintPattern(int n)
         {
@@ -169,7 +186,7 @@ namespace Assignment1
             Console.ReadKey();
         }
         // Question 5
-        public virtual IList<IList<int>> PalindromePairs(string[] words)
+        private static void PalindromePairs(string[] words) 
         {
 
             IList<IList<int>> result = new List<IList<int>>();
@@ -186,7 +203,7 @@ namespace Assignment1
                     }
                 }
             }
-            return result;
+            return;
         }
         public virtual bool IsPalindrome(string word1, string word2)
             {
